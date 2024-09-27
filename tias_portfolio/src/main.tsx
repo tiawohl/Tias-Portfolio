@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { createRoot } from 'react-dom/client'
 import * as React from 'react'
 import App from './App.tsx'
-import Home from './pages/home.tsx'
+import Portfolio from './pages/portfolio.tsx'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />
+        element: <Portfolio />
       }
     ]
   }
