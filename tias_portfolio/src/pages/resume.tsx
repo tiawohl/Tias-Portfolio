@@ -5,19 +5,6 @@ import SkillBar from "../components/skillBar";
 export default function Resume () {
     return (
     <div className="w3-content w3-margin-top" style={{ maxWidth: '1200px' }}>
-        <header>
-        <img src="images/logo.png" className="logo" alt="Logo" />
-        <h1 className="myname">TIA WOHL</h1>
-        <p>Student - Editor - Illustrator - Communications</p>
-        <nav>
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="work.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
-        </header>
         
         <div className="w3-row-padding">
         <div className="w3-third">
