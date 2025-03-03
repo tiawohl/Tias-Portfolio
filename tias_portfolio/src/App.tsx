@@ -9,7 +9,7 @@ function App() {
     <header>
       <Header />
     </header>
-    <main>
+    <main className='mainBody'>
       <Outlet />
     </main>
     <footer>

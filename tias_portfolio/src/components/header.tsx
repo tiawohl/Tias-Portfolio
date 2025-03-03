@@ -5,15 +5,17 @@ export default function Header() {
         <>
             <div className="header">
                 <img src="images/logo.png" className="logo"/>
-                <center><a href="index.html" id="myname">TIA WOHL</a></center>
+            </div>
+            <div className="scrollHeader">
+                <center><a href="index.html" id="myName">TIA WOHL</a></center>
                 <div id="header_descriptor">
-                    <center>Student - Editor - Illustrator - Communications</center>
+                    <center className="bio">Student - Editor - Illustrator - Communications</center>
                     <center><nav>
-                    <ul>
-                        <Link to={'/'}>Home</Link>
-                        <Link to={'/resume'}>Resume</Link>
-                        <Link to={'/contact'}>Contact</Link>
-                        <Link to={'/about'}>About</Link>
+                    <ul className="navLinks">
+                        <Link to={'/'} className="navLink">Home</Link>
+                        <Link to={'/resume'} className="navLink">Resume</Link>
+                        <Link to={'/contact'} className="navLink">Contact</Link>
+                        <Link to={'/about'} className="navLink">About</Link>
                     </ul>
                 </nav></center>
                 </div>
