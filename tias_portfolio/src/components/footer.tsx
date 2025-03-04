@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <>
-            <h6>&copy;Tia Wohl</h6>
+            <h5>&copy;Tia Wohl</h5>
         </>
     )
 }

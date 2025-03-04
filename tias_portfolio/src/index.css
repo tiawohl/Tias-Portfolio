@@ -3,21 +3,22 @@ body {
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .header {
-  border: 2px solid black;
-  background-color: rgb(254, 212, 219);
+  /* border: 2px solid black; */
   padding: 8px 18px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
+  display: grid;
+  grid-template: auto / 120px auto 300px;
+  align-items: center;
+  height: 130px;
+  background-image: linear-gradient(to top, white, rgb(254, 212, 219))
 }
 
+/*
 .scrollHeader {
+  border: 2px solid black;
   position: fixed;
   top: 60px;
   left: 0;
@@ -31,39 +32,87 @@ body {
 .scrollHeader.hidden {
   transform: translateY(-100%);
 }
+*/
 
 .logo {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  height: 98px;
 }
 
-.bio{
-  border: 2px solid black;
+.bioContainer {
+  margin-left: 12px;
+  /* border: 2px solid black; */
 }
 
-#myName {
-  border: 2px solid black;
-  max-width:600px;
-  margin-top: 2px;
-  font-size:100px;
+.myName {
+  /* border: 2px solid black; */
+  /* max-width:600px; */
+  /* margin-top: 2px; */
+  font-size:25px;
   font-family: 'Londrina Outline', cursive;
   color: rgb(2, 2, 2);
   text-decoration: none;
+  height: 75px;
 }
 
 .navLinks {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 35%;
   display: flex;
   justify-content: space-evenly;
+  align-self: flex-start;
+  /* padding: 10px; */
+  margin: 0px 0px 55px 35px;
 }
 
 .navLink {
-  border: 2px solid black;
-  margin: 5px;
+  /* border: 2px solid black; */
+  color: black;
   text-decoration: none;
 }
 
-.mainBody {
-  position: fixed;
-  top: 400px;
+.navLinkButton {
+  border: none;
+  margin: 0px 10px;
+  padding: 5px 9px;
+  border-radius: 10px;
+  background-color: rgb(254, 212, 219);
+}
+
+.myWork {
+  background-color:blueviolet;
+  padding: 30px;
+  display: grid;
+  grid-template: auto / auto auto;
+  grid-gap: 15px;
+  margin: 0 12px;
+  border-radius: 12px;
+}
+
+.portfolioPiece {
+  background-color: aqua;
+  text-align: center;
+  padding: 12px 0;
+  height: 200px;
+  color: white;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flower {
+  background-image: url("images/flower.jpeg");
+}
+
+.flowers {
+  background-image: url("images/flowers.jpeg");
+}
+
+.rose {
+  background-image: url("images/rose.jpeg");
+}
+
+.tulip {
+  background-image: url("images/tulip.jpeg");
 }

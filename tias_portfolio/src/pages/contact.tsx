@@ -20,10 +20,6 @@ export default function Contact () {
               </form>
             </div>
           </main>
-    
-          <footer>
-            <h5>&copy; Tia Wohl</h5>
-          </footer>
         </div>
       );
 }

@@ -5,10 +5,28 @@ export default function Header() {
         <>
             <div className="header">
                 <img src="images/logo.png" className="logo"/>
+                <div className="bioContainer">
+                    <Link to={'/'} className="myName"><p >TIA WOHL</p></Link>
+                    <p>Student - Editor - Illustrator - Communications</p>
+                </div>
+                <nav>
+                    <ul className="navLinks">
+                        <button className="navLinkButton">
+                            <Link to={'/'} className="navLink">Home</Link>
+                        </button>
+                        <button className="navLinkButton">
+                            <Link to={'/contact'} className="navLink">Contact</Link>
+                        </button>
+                        <button className="navLinkButton">
+                            <Link to={'/about'} className="navLink">About</Link>
+                        </button>
+                        {/* <Link to={'/resume'} className="navLink">Resume</Link> */}
+                    </ul>
+                </nav>
             </div>
-            <div className="scrollHeader">
+            {/* <div className="scrollHeader">
                 <center><a href="index.html" id="myName">TIA WOHL</a></center>
-                <div id="header_descriptor">
+                <div>
                     <center className="bio">Student - Editor - Illustrator - Communications</center>
                     <center><nav>
                     <ul className="navLinks">
@@ -19,7 +37,7 @@ export default function Header() {
                     </ul>
                 </nav></center>
                 </div>
-            </div>
+            </div> */}
         </>
     )
-}
+} 
