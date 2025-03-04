@@ -1,5 +1,5 @@
 export interface PortfolioPieceProps {
     name: string;
-    backgroundImage: string;
+    className: string;
     link: string;
 }
