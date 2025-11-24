@@ -2,18 +2,23 @@ body {
     display: flex;
 }
 
+/* header */
+
 .logo {
-    height: 20em;
-    width: 20em;
+    /* height: 20em;
+    width: 20em; */
+    aspect-ratio: 1 / 1;
+    width: 100%;
 }
 
 header {
     display: "flex";
     flex-direction: column;
-    width: 20em;
+    width: 35%;
     height: 100%;
     align-items: center;
     text-align: center;
+    margin-right: 5px;
 }
 
 header h4 {
@@ -34,6 +39,8 @@ header h4 {
     font-weight: 500;
 }
 
+/* project page body */
+
 .main {
     display: "flex";
     flex-direction: column;
@@ -45,4 +52,72 @@ header h4 {
     display: block;
     height: max-content;
     width: max-content;
+}
+
+/* home page body */
+
+.project-gallery {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    width: 100%;
+}
+
+.project-thumbnail {
+    /* border: 1px solid black; */
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.thumbnail-content {
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    width: 90%;
+    height: 90%;
+}
+
+.project-thumbnail:hover .thumbnail-content {
+    opacity: 0.96;
+}
+
+.ulta {
+    background-image: url("../content/makeup_icons/app_banner-hor.png");
+}
+
+.soul-sync {
+    background-image: url("../content/yoga_app/main_screen_mockup.png")
+}
+
+.favorite-day {
+    background-image: url("../content/favorite_day_soda/favorite_day_group.png")
+}
+
+.eos {
+    background-image: url("../content/favorite_day_soda/favorite_day_group.png")
+}
+
+.phoenix-fashion {
+    background-image: url("../content/fashion_mag/from_the_editor.png")
+}
+
+.gmmg {
+    background-image: url("../content/fashion_mag/from_the_editor.png")
+}
+
+.website-rebrand {
+    background-image: url("../content/makeup_icons/Individuals-02.png")
+}
+
+.gastra {
+    background-image: url("../content/GASTRA/GASTRA_Front_2-07.png")
+}
+
+.cupcake-amour {
+    background-image: url("../content/cupcake_amour/catering_page.png")
 }
